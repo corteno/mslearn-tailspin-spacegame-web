@@ -14,7 +14,7 @@ pool:
 variables:
   buildConfiguration: 'Release'
   wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
-  dotnetSdkVersion: '5.x'
+  dotnetSdkVersion: '5.0'
   discordChannelId: '897189540219981834'
   discordToken: 'Z_6bpjvCNW9lVE0cYno2mv78X5lIQcVjCU-EKiz5eam_SYDfUECVJotUc_IFCi9PHtfK'
 
