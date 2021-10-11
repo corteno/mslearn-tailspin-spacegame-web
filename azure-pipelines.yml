@@ -61,3 +61,10 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
   condition: succeeded()
+
+- task: fizzcode-discordhook@1
+  inputs:
+    DiscordChannelID: '897186370366345326'
+    DiscordToken: '0K0pDblJyC7LwJ42HhIyhfD3Da12IZc5Sg3KdOB5kGU7P1H0vSCcfKuxdy68LZ--6GPC'
+    Title: '$Build $(Build.BuildNumber) succeeded ($(Build.Reason))'
+    Message: '$(Build.SourceVersionMessage)'
